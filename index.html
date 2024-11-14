@@ -84,7 +84,8 @@
 
         /* Login Container */
         .login-container {
-            background-color: #222; /* Dark background for login */
+            background-color: #222;
+            /* Dark background for login */
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -104,8 +105,10 @@
 
         h1 {
             margin-bottom: 20px;
-            color: #d4af37; /* Golden color */
-            font-family: 'Georgia', serif; /* Eye-catching font */
+            color: #d4af37;
+            /* Golden color */
+            font-family: 'Georgia', serif;
+            /* Eye-catching font */
         }
 
         .input-group {
@@ -117,15 +120,19 @@
         select {
             width: 100%;
             padding: 10px;
-            border: 1px solid #d4af37; /* Golden border */
+            border: 1px solid #d4af37;
+            /* Golden border */
             border-radius: 5px;
             transition: border-color 0.3s;
-            background-color: #333; /* Dark background */
-            color: #d4af37; /* Golden text color */
+            background-color: #333;
+            /* Dark background */
+            color: #d4af37;
+            /* Golden text color */
         }
 
         input:focus {
-            border-color: #ffcc00; /* Golden border on focus */
+            border-color: #ffcc00;
+            /* Golden border on focus */
             outline: none;
         }
 
@@ -140,6 +147,52 @@
             width: 100%;
         }
 
+        /* Ad Section Styling */
+        .ad-section {
+            border: 2px solid #0073e6;
+            /* Border color to make it stand out */
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(240, 248, 255, 0.8);
+            /* Light background with slight transparency */
+            margin: 20px auto;
+            width: 80%;
+            /* Adjust width as needed */
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Soft shadow for a subtle lift effect */
+            text-align: center;
+        }
+
+        /* Header Styling for Ad Section */
+        .ad-section h1 {
+            color: #0073e6;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        /* Sub-header Styling */
+        .ad-section h2 {
+            color: #ff6600;
+            font-size: 1.4em;
+            margin-top: 15px;
+        }
+
+        /* Paragraph Text Styling */
+        .ad-section p {
+            color: #333;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        /* Icon Styling */
+        .ad-section h2:before {
+            content: "• ";
+            color: #ff6600;
+            font-weight: bold;
+        }
+
+
         button:hover {
             background-color: #357ae8;
             transform: scale(1.05);
@@ -153,62 +206,146 @@
         /* Dashboard Styles */
         #dashboard {
             padding: 20px;
-            display: none; /* Initially hidden */
-            color: #ffcc00; /* Change dashboard text color */
+            display: none;
+            /* Initially hidden */
+            color: #ffcc00;
+            /* Change dashboard text color */
+        }
+
+        /* General Form Styling */
+        .registration-section {
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .registration-section h2 {
+            color: #0073e6;
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .registration-section form div {
+            margin-bottom: 15px;
+        }
+
+        .registration-section label {
+            display: block;
+            font-size: 1em;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .registration-section input[type="text"],
+        .registration-section input[type="email"],
+        .registration-section input[type="password"],
+        .registration-section input[type="tel"],
+        .registration-section select,
+        .registration-section textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        .registration-section button {
+            width: 100%;
+            padding: 10px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #0073e6;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .registration-section button:hover {
+            background-color: #005bb5;
         }
 
         header {
             display: flex;
             justify-content: space-between;
-            align-items: center; /* Correct alignment */
-            position: relative; /* For positioning the logout button */
+            align-items: center;
+            /* Correct alignment */
+            position: relative;
+            /* For positioning the logout button */
         }
 
         .logout-button {
-            background-color: transparent;
-            color: #d4af37; /* Golden color */
+            position: absolute;
+            /* Position it in the top-right corner */
+            top: 9px;
+            /* Adjust vertical positioning */
+            right: 1000px;
+            /* Adjust horizontal positioning */
+            left: 1px;
+            padding: 1px;
+            /* Smaller padding */
+            font-size: 16px;
+            /* Smaller font size */
+            background-color: #f1c40f;
+            /* Adjust color as needed */
+            color: #000;
+            /* Adjust text color */
             border: none;
-            cursor: pointer;
-            font-size: 0.8em; /* Adjusted font size */
-            padding: 5px 1px; /* Adjusted padding */
-            text-decoration: underline;
-            transition: color 0.3s, transform 0.3s;
-            position: absolute; /* Positioning for center right */
-            right: 2px;
-            top: 50%; /* Center vertically */
-            transform: translateY(-50%); /* Adjust for centering */
+            /* Remove default border */
+            border-radius: 30px;
+            /* Rounded corners if desired *
+            cursor: pointer; /* Show pointer on hover */
         }
 
         .logout-button:hover {
-            color: #ffcc00; /* Lighter golden color on hover */
-            transform: scale(1.1); /* Grow on hover */
+            background-color: #e67e22;
+            /* Change color on hover if desired */
+        }
+
+
+        .logout-button:hover {
+            color: #ffcc00;
+            /* Lighter golden color on hover */
+            transform: scale(1.1);
+            /* Grow on hover */
         }
 
         .announcement-card,
         .feature-card,
         .notification-card,
         .progress-card {
-            background-color: #222; /* Match login box color */
+            background-color: #222;
+            /* Match login box color */
             padding: 15px;
             margin: 10px 0;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border: 2px solid #d4af37; /* Golden border */
-            color: #d4af37; /* Golden text color for visibility */
+            border: 2px solid #d4af37;
+            /* Golden border */
+            color: #d4af37;
+            /* Golden text color for visibility */
         }
 
         h3 {
-            color: #ffcc00; /* Make headings visible */
-            font-family: 'Georgia', serif; /* Eye-catching font */
+            color: #ffcc00;
+            /* Make headings visible */
+            font-family: 'Georgia', serif;
+            /* Eye-catching font */
         }
 
         /* Attendance Calculator Styles */
         #attendance-calculator {
             padding: 20px;
-            background-color: #222; /* Match login box color */
+            background-color: #222;
+            /* Match login box color */
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            display: none; /* Initially hidden */
+            display: none;
+            /* Initially hidden */
         }
 
         /* Attendance Calculator Form */
@@ -238,7 +375,6 @@
 </head>
 
 <body>
-
     <!-- Navigation Bar -->
     <nav>
         <div class="logo">EduTrack</div>
@@ -248,10 +384,18 @@
             <li><a href="#notifications">Notifications</a></li>
             <li><a href="#progress">Progress</a></li>
             <li><a href="#attendance-calculator" onclick="showAttendanceCalculator()">VTU Attendance Calculator</a></li>
+            <li><a href="#registration">Register</a></li>
         </ul>
         <div class="date" id="current-date"></div>
     </nav>
-
+    <!-- Welcome Section -->
+    <section style="padding: 40px; text-align: center; background-color: #f4f4f9;">
+        <h1>Welcome to Student Assignment Tracker</h1>
+        <p style="max-width: 800px; margin: auto;">
+            The Student Assignment Tracker is designed to help students manage assignments, track deadlines, and receive
+            feedback—all in one place. Our goal is to make learning more organized and stress-free.
+        </p>
+    </section>
     <!-- User Role Selection -->
     <section id="role-selection" style="display: flex; justify-content: center; margin-top: 50px;">
         <div class="login-container">
@@ -275,15 +419,39 @@
             <p id="error-message" class="error-message"></p>
         </div>
     </section>
+    <section class="ad-section"
+        style="border: 2px solid #0073e6; padding: 20px; border-radius: 10px; background-color: #f0f8ff; margin: 20px;">
+        <h1 style="color: #0073e6; text-align: center;">Why Use Student Assignment Tracker?</h1>
 
+        <div style="margin-top: 15px;">
+            <h2 style="color: #ff6600;">📅 Centralized Assignment Management</h2>
+            <p>Access all assignments in one place, with clear due dates and instructions. No more missed deadlines!</p>
+        </div>
+
+        <div style="margin-top: 15px;">
+            <h2 style="color: #ff6600;">⏰ Better Time Management</h2>
+            <p>Plan ahead with a full view of upcoming assignments. Prioritize tasks with ease.</p>
+        </div>
+
+        <div style="margin-top: 15px;">
+            <h2 style="color: #ff6600;">🔔 Real-Time Notifications</h2>
+            <p>Stay updated with instant alerts on assignment changes. Always be in the know.</p>
+        </div>
+    </section>
+
+    <section>
+        <marquee behavior="round" direction="left to right"><big> <span style="color:blue">the website is getting
+                    ready</span> </big> </marquee>
+    </section>
     <!-- Dashboard Section -->
     <section id="dashboard">
         <header>
             <h2>Dashboard</h2>
             <div style="flex-grow: 1; text-align: right;">
                 <button class="logout-button" onclick="logout()">Logout </button>
-                <hr>
+
             </div>
+            <hr>
         </header>
         <div id="announcements">
             <h3>Announcements</h3>
@@ -303,7 +471,80 @@
             <div class="progress-card">This feature is coming soon.</div>
         </div>
     </section>
+    <!-- Registration Section -->
+    <section id="registration" class="registration-section" style="display: none;">
+        <h2>Student Registration</h2>
+        <form id="studentForm" action="#" method="post">
+            <div>
+                <label for="studentName">Full Name:</label>
+                <input type="text" id="studentName" name="studentName" required>
+            </div>
+            <div>
+                <label for="studentEmail">Email:</label>
+                <input type="email" id="studentEmail" name="studentEmail" required>
+            </div>
+            <div>
+                <label for="studentPassword">Password:</label>
+                <input type="password" id="studentPassword" name="studentPassword" required>
+            </div>
+            <div>
+                <label for="studentID">Student ID:</label>
+                <input type="text" id="studentID" name="studentID" required>
+            </div>
+            <div>
+                <label for="yearAndSemester">Year & Semester:</label>
+                <select id="yearAndSemester" name="yearAndSemester" required>
+                    <option value="">Select Year & Semester</option>
+                    <option value="1st Year - Semester 1">1st Year - Semester 1</option>
+                    <option value="1st Year - Semester 2">1st Year - Semester 2</option>
+                    <option value="2nd Year - Semester 3">2nd Year - Semester 3</option>
+                    <option value="2nd Year - Semester 4">2nd Year - Semester 4</option>
+                    <option value="3rd Year - Semester 5">3rd Year - Semester 5</option>
+                    <option value="3rd Year - Semester 6">3rd Year - Semester 6</option>
+                    <option value="4th Year - Semester 7">4th Year - Semester 7</option>
+                    <option value="4th Year - Semester 8">4th Year - Semester 8</option>
+                </select>
+            </div>
+            <div>
+                <label for="major">Major/Subject Focus (optional):</label>
+                <input type="text" id="major" name="major">
+            </div>
+            <button type="submit">Register as Student</button>
+        </form>
 
+        <h2>Educator Registration</h2>
+        <form id="educatorForm" action="#" method="post">
+            <div>
+                <label for="educatorName">Full Name:</label>
+                <input type="text" id="educatorName" name="educatorName" required>
+            </div>
+            <div>
+                <label for="educatorEmail">Email:</label>
+                <input type="email" id="educatorEmail" name="educatorEmail" required>
+            </div>
+            <div>
+                <label for="educatorPassword">Password:</label>
+                <input type="password" id="educatorPassword" name="educatorPassword" required>
+            </div>
+            <div>
+                <label for="educatorID">Educator ID (if applicable):</label>
+                <input type="text" id="educatorID" name="educatorID">
+            </div>
+            <div>
+                <label for="institution">Institution:</label>
+                <input type="text" id="institution" name="institution" required>
+            </div>
+            <div>
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department" required>
+            </div>
+            <div>
+                <label for="subject">Subjects Taught:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <button type="submit">Register as Educator</button>
+        </form>
+    </section>
     <!-- Attendance Calculator Section -->
     <section id="attendance-calculator">
         <h1>VTU Attendance Calculator</h1>
@@ -334,6 +575,55 @@
 
         <div id="result"></div>
     </section>
+    <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+        <div style="max-width: 1000px; margin: auto;">
+            <!-- Footer Links -->
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px;">
+                <!-- About Section -->
+                <div>
+                    <h3>About Us</h3>
+                    <p style="max-width: 300px;">The Student Assignment Tracker is designed to help students manage
+                        assignments, track deadlines, and receive feedback—all in one place. Our goal is to make
+                        learning more organized and stress-free.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li><a href="#dashboard" style="color: #fff; text-decoration: none;">Dashboard</a></li>
+                        <li><a href="#assignments" style="color: #fff; text-decoration: none;">Assignments</a></li>
+                        <li><a href="#attendance" style="color: #fff; text-decoration: none;">Attendance</a></li>
+                        <li><a href="#contact" style="color: #fff; text-decoration: none;">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div>
+                    <h3>Contact Us</h3>
+                    <p>Email: <a href="mailto:support@studenttracker.com"
+                            style="color: #fff; text-decoration: none;">support@studenttracker.com</a></p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+
+                <!-- Social Media Links -->
+                <div>
+                    <h3>Follow Us</h3>
+                    <a href="https://www.instagram.com/accounts/login/" target="_blank"
+                        style="color: #ffffff; margin: 10 10px;text-decoration: none;"><u>Instagram </u></a>
+                    <a href="" style="color: #fff; margin: 10 10px; text-decoration: none;">Twitter</a>
+                    <a href="https://www.facebook.com/login/" target="_blank"
+                        style="color: #fff; margin: 10 10px; text-decoration: none;">Facebook</a>
+                    <a href="#" style="color: #fff; margin: 10 10px; text-decoration: none;">LinkedIn</a>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div style="margin-top: 20px;">
+                <p>&copy; 2024 Student Assignment Tracker. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         let userRole = '';
@@ -376,9 +666,9 @@
             document.getElementById('attendance-calculator').style.display = 'block';
         }
 
-        document.getElementById('attendanceForm').addEventListener('submit', function(e) {
+        document.getElementById('attendanceForm').addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             const scheme = document.getElementById('scheme').value;
             const startDate = new Date(document.getElementById('startDate').value);
             const endDate = new Date(document.getElementById('endDate').value);
@@ -401,5 +691,8 @@
         const currentDate = new Date().toLocaleDateString();
         document.getElementById('current-date').textContent = currentDate;
     </script>
+    <!-- Footer -->
+
 </body>
+
 </html>
