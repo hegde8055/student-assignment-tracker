@@ -649,6 +649,15 @@
                 document.getElementById('dashboard').style.display = 'block';
             }
         });
+        function showRegistration() {
+            document.getElementById("registration").style.display = "block";
+            document.getElementById("dashboard").style.display = "none";
+        }
+
+        document.querySelector(".nav-links a[href='#registration']").addEventListener("click", function (e) {
+            e.preventDefault();
+            showRegistration();
+        });
 
         function logout() {
             document.getElementById('login-page').style.display = 'none';
